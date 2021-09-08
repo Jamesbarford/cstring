@@ -8,9 +8,9 @@ The `cstring` is a simple struct:
 
 ```c
 typedef struct cstring {
-		/* current length of the string */
+    /* current length of the string */
     unsigned int len;
-		/* the string buffer containing the string */
+    /* the string buffer containing the string */
     char *buf;
 } cstring;
 ```
@@ -20,12 +20,12 @@ typedef struct cstring {
 #include "cstring.h"
 
 int main(void) {
-		/* create an empty string */
+    /* create an empty string */
     cstring *cstr = cstringEmpty();
-		cstringConcat(cstr, "hello, world");
-
-		printf("len: %d, string: %s\n", cstr->len, cstr->buf);
-		/* len: 13, string: hello, world */
+	cstringConcat(cstr, "hello, world");
+    
+    printf("len: %d, string: %s\n", cstr->len, cstr->buf);
+    /* len: 13, string: hello, world */
 }
 ```
 
