@@ -1,4 +1,4 @@
-# cstring a simple sring library for c
+# cstring a simple string library for c
 
 For simpler management of strings in c.
 
